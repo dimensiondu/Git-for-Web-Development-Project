@@ -1,1 +1,102 @@
 https://codepen.io/nussery/pen/povOmRe?editors=1100
+
+
+
+    1. What is Semantic HTML? 
+		semantic html is html used to give understandable structure. for example headers and footers, or separate sections or divisions. not only marking up the html but in a easily understandable way
+    2. What is HTML used for? 
+		html is a markup language, meaning that it is used for structure on a webpage.
+    3. What is an attribute and where do we put it? 
+		put in start tag of a markup. an attribute is a part of a structure tag and can be a selector type like an ID or Class, or it can be a source for an image or a URL link
+    4. What is the h1 tag used for? How many times should I use it on a page?
+		it is the main header on a page, only once
+    5. Name two tags that have required attributes
+		images, url links
+    6. What do we put in the head of our HTML document? 
+		the title of the page and a nav bar
+    7. What is an id? 
+		a selector used in cooperation with CSS to modify the element more specifically
+    8. What elements can I add an id to? 
+		most any elements, but usually <p> <div> <h1-6>
+    9. How many times can I use the same id on a page? 
+		once
+    10. What is a class? 
+		like an ID however can be used more than once, as it is a group of items recieving the same styles from css
+    11. What elements can I add a class to? 
+		all elements
+    12. How many times can I use the same class on a page? 
+		as many as required
+    13. How do I get my link to open in a new tab?
+		the <a href=""> tag needs the appropriate url being pointed to by the href
+    14. What is the alt attribute used for? 
+		used mostly for pictures but for any element in case it isnt loaded properly, its a basic description of the unloaded element (picture of lighthouse, etc)
+    15. How do I reference an id?
+		in css:#id{}
+    16. What is the difference between a section and a div
+		sections are for content grouping, divs for style groupings
+    17. What is CSS used for? 
+		to style the webpage
+    18. How to we select an element? Example - every h2 on the page
+		h2{}
+		type in the element tag with curly brackets
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+		the number of times each can be used, class:many, ID:once
+		all <p> can be classed, but maybe one is different, that one is ID'd
+    20. How do we select classes in CSS?
+		.className
+    21. How do we select a p element with a single class of “human””?
+		p.human{}
+    22. What is a parent child selector? When would this be useful? 
+		when you have a lot of html markup, you will have multiple hierarchies of divs and p's. so to specify one particular <p> tag without using ID's you can just reference through its lineage. this is assuming the parent is classed or ID'd or to specify one particular classed child
+    23. How do you select all links within a div with the class of sidebar?
+		sidebar.a{}
+    24. What is a pseudo selector?
+		a attribute in css used after the tag choice. most common is the hover selector. referencing when the chosen tag is hovered over
+    25. What do we use the change the spacing between lines?
+		line-height:
+    26. What do we use to change the spacing between letters?
+		letter-space:
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+		text-transform:[uppercase/lowercase/capitalize]
+    28. How do I add a 1px border around my div that is dotted and black?
+		border: 1px dotted black;
+    29. How do I select everything on the page? 
+		*{}
+    30. How do I write a comment in CSS?
+		/*comment goes here*/
+    31. How do I find out what file I am in, when I am using the command line? 
+		pwd command the print working directory command
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+		using the ls(list) command tells you whats in your current directory. 
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+		rm deletedFileName
+    34. Why should I use version control? 
+		to better document the flow of your programming. you will always know when and what was changed
+    35. How often should I commit to github?
+		often, after finishing a section or document
+    36. What is the command we would use to push our repo up to github? 
+		git add files
+		git commit -a
+		git push _________
+    37. Walk me through Lambda's git flow. 
+		we fork the given project on github. then add our TL as a collaborator to the assignment
+		then copy the git link and clone it with gitBash
+		then we branch and set the branch as the origin for future pushes
+		when done, we commit and push, then on github pull as a draft and add our TL as a reviewer
+		the on the module respective page add the pull url
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+		block is a whole section and takes up space from side to side of the page
+		inline adds selectors literally inline with no section creation
+    2. What happens when an element is positioned absolutely? 
+		even when scrolling the element will stick the current anchor(a div or the body itself) and will move with it
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+		padding, is the space between the content of the element and the border of the element
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+		<p> <h1> <h2>         <span> <a>			<img> 
+    5. In your own words, explain the box model. What is the fix for the box model? 
+		series of boxes of influence around content. there is the content itself and then the border. the space between the content and border is padding. and between border and something else is margin
+		the box-sizing method. which changes the padding and border of an element to be a part of the elements total size and doesnt change the elements size, but margin still moves the element
+
